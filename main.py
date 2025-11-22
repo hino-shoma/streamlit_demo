@@ -2,7 +2,7 @@ import streamlit as st # フロントエンドを扱うstreamlitの機能をイ�
 from openai import OpenAI # openAIのchatGPTのAIを活用するため
 import os # OSの機能をインポート
 
-OPENAI_API_KEY = st.secret["openai"]["api_key"]
+OPENAI_API_KEY = st.secret["OPENAI_API_KEY"]
 
 
 client = OpenAI(api_key=OPENAI_API_KEY)
